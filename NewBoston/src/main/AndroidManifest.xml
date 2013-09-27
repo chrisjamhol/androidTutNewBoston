@@ -46,6 +46,9 @@
         <activity android:name=".InternalData" android:label="InternalData" ></activity>
         <activity android:name=".ExternalData" android:label="ExternalData" ></activity>
         <activity
+            android:name=".Accelerate"
+            android:label="Accelerate"></activity>
+        <activity
             android:name=".SQLiteExample"
             android:label="SQLiteExample"></activity>
         <activity
