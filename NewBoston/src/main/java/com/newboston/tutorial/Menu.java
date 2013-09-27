@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -18,7 +16,7 @@ public class Menu extends ListActivity{
 
     String classes[] = {"MainActivity", "TextPlay", "Email", "Camera", "Data", "GFX",
                         "GFXSurface", "SoundStuff","Tabs","SimpleBrowser","Flipper",
-                        "SharedPrefs","InternalData","ExternalData"};
+            "SharedPrefs", "InternalData", "ExternalData", "SQLiteExample"};
 
 
     @Override
