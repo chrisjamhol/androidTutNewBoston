@@ -12,13 +12,12 @@ import android.widget.ListView;
 /**
  * Created by Chris on 12.09.13.
  */
-public class Menu extends ListActivity{
+public class Menu extends ListActivity {
 
     String classes[] = {"MainActivity", "TextPlay", "Email", "Camera", "Data", "GFX",
-                        "GFXSurface", "SoundStuff","Tabs","SimpleBrowser","Flipper",
+            "GFXSurface", "SoundStuff", "Tabs", "SimpleBrowser", "Flipper",
             "SharedPrefs", "InternalData", "ExternalData", "SQLiteExample",
-            "Accelerate"};
-
+            "Accelerate", "Mapsnotworking", "HttpExample", "XmlWeather", "GLExample", "GLCubeEx"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +32,9 @@ public class Menu extends ListActivity{
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        try{
-            startActivity(new Intent(Menu.this,Class.forName("com.newboston.tutorial."+classes[position])));
-        }catch (ClassNotFoundException e){
+        try {
+            startActivity(new Intent(Menu.this, Class.forName("com.newboston.tutorial." + classes[position])));
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -50,7 +49,7 @@ public class Menu extends ListActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.aboutUs:
                 startActivity(new Intent("com.newboston.tutorial.ABOUT"));
                 break;
