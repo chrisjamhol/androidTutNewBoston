@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/calculateResult"
-        android:textSize="45dp"
         android:gravity="center"
-        android:paddingTop="35dp"
         android:paddingBottom="35dp"
-    />
+        android:paddingTop="35dp"
+        android:text="@string/calculateResult"
+        android:textSize="45dp" />
 
     <Button
         android:id="@+id/bAdd"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/custom"
-        android:textSize="20dp"
-    />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/bSubtract"
-        android:layout_height="wrap_content"
         android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Subtract one"
-        android:textSize="20dp"
-        />
+        android:textSize="20dp" />
+
+    <com.google.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adUnitId="ca-app-pub-1418576174264803/7403138971"
+        ads:loadAdOnCreate="true"
+        ads:adSize="BANNER" />
 
 </LinearLayout>
